@@ -1,0 +1,176 @@
+:root{
+    --celeste: #15a9ff;
+    --verde: #9ddebc;
+    --grisClaro: #e1e1e1;
+    --blanco: #fff;
+    --negro: rgb(36, 35, 35);
+    
+    --separacion: 5rem;
+
+    --fuentePrincipal: 'Roboto', sans-serif;
+    --fuenteSecundaria:'Lato', sans-serif;
+    
+}
+
+
+html{
+    box-sizing: border-box;
+    font-size: 52.5%;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* Globales */
+h1,h2,h3{
+    font-weight: 900;
+    font-family: var(--fuenteSecundaria);
+    margin: calc( var(--separacion) / 2 ) 0;
+}
+
+h1{
+    font-size: 4.4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Utilidades */
+.container{
+    max-width: 220rem;
+}
+.text-bold{
+    /* font-weight: 800; */
+    font-size: 2rem;
+}
+.btn{
+    font-size: 2rem;
+}
+.btn-primary{
+    background-color: var(--negro);
+    border: none;
+}
+.btn-primary:hover{
+    background-color: var(--verde);
+    color: var(--negro);
+}
+
+/* Header */
+
+/* Navbar */
+.logo{
+    height: 5rem;
+    margin: 2rem;
+}
+.brand span{
+    display: none;
+}
+
+.navbar-toggler-icon{
+    width: 2.5em;
+    height: 2.5em;
+}
+
+@media (min-width:768px){
+    .brand a{
+        display: block;
+       }
+    .logo{
+        height: 5rem;
+        margin: 1rem;
+    }
+    .brand span{
+        display: inline;
+    }
+    
+}
+
+.social-icon{
+    font-size: 2.5rem;
+    color: var(--negro);
+}
+
+@media(min-width:768px){
+    .social a, .social button{
+        margin: 0 1.5rem;
+    }
+}
+
+
+/* Hero */
+.hero{
+    background-image: url(../img/works.webp);
+    min-height: 50rem;
+    background-size: cover;
+    /* border: 1px solid red; */
+}
+
+@media(min-width:769px){
+    .hero{
+        height: 70rem;
+    }
+}
+
+/* .profile-picture{
+   position: relative; 
+   left: 10rem;
+   bottom: 10rem;
+} */
+.picture{
+    border-radius: 50%;
+    min-width: 20rem;
+    height: 20rem; 
+    z-index: 2;
+}
+.container-about-me{
+    /* padding-left: 1rem; */
+    z-index: 3;
+    position: relative;
+    bottom: 10rem;
+}
+.information{
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .information{
+        padding-left: 7rem;
+    }
+}
+.information span{
+    font-size: 2.4rem;
+}
+.text-information{
+    padding: 2rem;
+}
+
+.text-about-me{
+    padding: 0 2rem;
+    text-align: center;
+}
+
+
+@media (min-width:768px) {
+    .text-about-me{
+        position: relative;
+        text-align: start;
+        top: 15rem;
+        padding: 2rem 5rem;
+    }
+}
