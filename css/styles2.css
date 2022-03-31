@@ -32,7 +32,6 @@ h1,h2,h3,h4{
     font-weight: 900;
     font-family: var(--fuenteSecundaria);
     margin: calc( var(--separacion) / 2 ) 0;
-    /* margin:0; */
 }
 
 h1{
@@ -80,7 +79,6 @@ img{
     background-color: var(--verde);
     color: var(--negro);
 }
-
 
 @media (min-width:992px) {
     .mb-5{
@@ -203,77 +201,12 @@ img{
         width: auto;
         height: 20rem;
     }
+
 }
-
-
-
-
-
-
-
-.elem-edu{
-    background-color: var(--grisClaro);
-    padding: 2rem;
-    border-radius: 2rem;
-}
-
-@media (min-width:768px){
-    .education{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .education img{
-        height: auto;
-        width: 20rem;
-    }
-    /* .elem-edu{
-        margin: 0 auto;
-    }  */
-}
-
-
 .info-extra span{
     font-weight: 600;
     font-size: 2rem;
 }
-.elem-edu img{
-    border-right: 2px solid #acacac;
-    padding: 3rem 3rem 3rem 1rem;
-}
-@media (min-width:768px) {
-    .elem-edu img{
-        border: none;
-        height: auto;
-        width: 15rem;
-}
-
-.p-img-2{
-    padding: 2rem 2rem 2rem 0 !important; 
-}
-
-.info-extra{
-    padding-top: 2rem;
-    border-top: 2px solid #acacac;
-}
-
-.info-extra h4, .info-extra p{
-    margin: 0;
-} 
 
 
-.container-exp h3, .container-exp h4, .container-exp p{
-    margin: 0.5rem;
-}
-
-.m-auto{
-    margin:0 auto;
-}
-
-
-@media (min-width:768px){
-    .m-md-auto{
-        margin: 0 auto;
-    }
-}
-
-
+/* Education */
