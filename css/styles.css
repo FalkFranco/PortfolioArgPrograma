@@ -59,11 +59,22 @@ img{
 }
 
 /* Utilidades */
+.bg-secondary{
+    background-color: #202020 !important;
+}
+.bg-secondary-items{
+    background-color:  rgba(0, 0, 0, 0.25);
+}
+.cl-w{
+    color: white;
+}
 .container-220{
     max-width: 220rem;
 }
-.container-m{
-    max-width: 195rem;
+@media (min-width:998px) {
+    .container-m{
+        max-width: 195rem;
+    }
 }
 .text-bold{
     /* font-weight: 800; */
@@ -80,9 +91,16 @@ img{
     background-color: var(--verde);
     color: var(--negro);
 }
-.p-10{
-    padding: calc(var(--separacion)*2) ;
+
+@media (min-width:768px){
+    .p-lg-10{
+        padding: calc(var(--separacion)*2) !important;
+    }
 }
+.p-4{
+    padding: 4rem !important;
+}
+
 .p-img-2{
     padding: 2rem 2rem 2rem 0 !important; 
 }
@@ -254,8 +272,6 @@ img{
     }
 }
 
-
-
 .info-extra{
     padding-top: 2rem;
     border-top: 2px solid #acacac;
@@ -265,6 +281,9 @@ img{
     margin: 0;
 } 
 
+.rounded{
+    border-radius: 2rem !important;
+}
 
 .container-exp h3, .container-exp h4, .container-exp p{
     margin: 0.5rem;
@@ -284,7 +303,7 @@ img{
 
 /* Skills */
 
-.technologies{
+.bg-im-bl{
     background-image: url(../img/Header_Black-01.svg);
     background-color: #202020;
     background-size: cover;
@@ -305,10 +324,11 @@ img{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+    justify-content: center;
 }
 
 .skills li{
-    min-width: 11rem;
+    min-width: 12rem;
     height: 12rem;
     display: flex;
     flex-direction: column;
@@ -316,7 +336,7 @@ img{
     margin-right: 2em;
     margin-top: 2em;
     transition: 0.2s;
-    background-color: #202020;
+    background-color: rgb(0 0 0 / 25%);
     border-radius: 5px;
     padding: 1em;
 }
